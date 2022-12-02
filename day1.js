@@ -17,7 +17,7 @@ file.split(/r?\n/).forEach((line) => {
     }
 });
 
-elves = _.sortBy(elves, (elf) => elf.totalCals).reverse();
+elves = _.sortBy(elves, ['totalCals']).reverse();
 
 console.log(`Number of Elves: ${currentElf}`);
 console.log(
