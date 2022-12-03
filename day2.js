@@ -42,7 +42,7 @@ const Score = (opponentMove, playerMove) => {
 let moveScore = 0;
 let outcomeScore = 0;
 
-file.split(/r?\n/).forEach((line) => {
+file.split(/\n/).forEach((line) => {
     var [opponentMove, playerMove] = line
         .split(' ')
         .map((x) =>

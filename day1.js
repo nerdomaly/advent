@@ -5,7 +5,7 @@ const file = fs.readFileSync('day1.input', 'utf-8');
 let elves = [];
 let currentElf = 0;
 
-file.split(/r?\n/).forEach((line) => {
+file.split(/\n/).forEach((line) => {
     if (line.trim() != '') {
         if (!elves[currentElf]) {
             elves[currentElf] = { id: currentElf, totalCals: 0, cals: [] };
